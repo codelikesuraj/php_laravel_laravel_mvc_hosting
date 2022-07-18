@@ -39,4 +39,4 @@
     <li><a href="https://youtu.be/QVNQq-LfHBk" target="_blank">Simple CRUD with Laravel</a></li>
 </ul>
 
-<h3>Check out the live project at <a href="http://stormy-sands-85785.herokuapp.com/users" target="_blank">http://stormy-sands-85785.herokuapp.com</a> hosted on Heroku</h3>
+<h3>Check out the live project at <a href="http://stormy-sands-85785.herokuapp.com" target="_blank">http://stormy-sands-85785.herokuapp.com</a> hosted on Heroku.</h3>

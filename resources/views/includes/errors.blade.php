@@ -1,9 +1,9 @@
 @if(Session::has('errors'))
-    <p>
+    <div class="alert alert-danger pb-0 pt-3">
         <ul>
             @foreach($errors->all() as $error)
                 <li>{{$error}}</li>
             @endforeach
         </ul>
-    </p>
+    </div>
 @endif
