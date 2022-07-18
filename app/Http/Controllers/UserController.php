@@ -23,7 +23,7 @@ class UserController extends Controller
         $validatedData = $request->validate([
             'name' => ['required', 'min:2', 'max:64'],
             'email' => ['required', 'email', 'max:64', 'unique:users'],
-            'phone' => ['numeric', 'min:11']
+            'phone' => ['required', 'max:11', 'min:11']
         ]);
 
         $user = new User;
@@ -45,7 +45,7 @@ class UserController extends Controller
         $validatedData = $request->validate([
             'name' => ['required', 'min:2', 'max:64'],
             'email' => ['required', 'email', 'max:64', Rule::unique('users')->ignore($user->id)],
-            'phone' => ['numeric', 'min:11']
+            'phone' => ['required', 'max:11', 'min:11']
         ]);
 
         $user->name = $validatedData['name'];
